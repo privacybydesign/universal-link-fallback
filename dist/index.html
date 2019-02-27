@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IRMA Session</title>
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+    #qrcontainer {
+      margin: auto;
+      text-align: center;
+    }
+    #return {
+      margin: auto;
+      text-align: center;
+      padding:24px;
+    }
+    #returnbutton {
+      background-color:#0085be;
+      -moz-border-radius:28px;
+      -webkit-border-radius:28px;
+      border-radius:28px;
+      border:1px solid #0085be;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:17px;
+      padding:16px 31px;
+      text-decoration:none;
+    }
+    #returnbutton:active {
+      position:relative;
+      top:1px;
+    }
+    #appstore {
+      margin: auto;
+      text-align: center;
+    }
+    .appbutton{
+      margin:12px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id='qrcontainer'>
+    </div>
+    <div id='return'>
+      <a id='returnbutton'>Done, return to app</a>
+    </div>
+    <div id='appstore'>
+      <p>No IRMA? Get it on:</p>
+    <a href="https://play.google.com/store/apps/details?id=org.irmacard.cardemu" target="_blank"class='appbutton'><img src="https://privacybydesign.foundation/images/google-play-badge.png" alt="Play Store" width="150" /></a>
+    <a href="https://itunes.apple.com/nl/app/irma-authentication/id1294092994" target="_blank" class='appbutton'><img src="https://privacybydesign.foundation/images/app-store-badge.png" alt="Apple Store" width="150" /></a>
+    </div>
+  </body>
+</html>
