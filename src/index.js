@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#returnbutton').setAttribute("href", returnURL);
 
   irma.newWeb({
-    debugging: true,
     language: "en",
     element: "#qrcontainer",
     session: {
