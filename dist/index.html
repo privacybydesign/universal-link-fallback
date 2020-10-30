@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="main.js"></script>
     <style>
+    body {
+      font-family: "Roboto",Tahoma,Arial,sans-serif;
+    }
     #qrcontainer {
-      margin: auto;
-      text-align: center;
+      margin: 0 auto;
+      border-color: transparent;
+      background-color: white !important;
+      height: auto !important;
+      min-height: 250px !important;
+    }
+    #qrcontainer p {
+      color: black;
     }
     #return {
       margin: auto;
       text-align: center;
-      padding:24px;
+      padding: 10px 24px 24px;
     }
-    #returnbutton {
-      background-color:#0085be;
+    .irma-web-button {
       -moz-border-radius:28px;
       -webkit-border-radius:28px;
       border-radius:28px;
-      border:1px solid #0085be;
-      display:inline-block;
-      cursor:pointer;
-      color:#ffffff;
-      font-family:Arial;
-      font-size:17px;
       padding:16px 31px;
-      text-decoration:none;
-    }
-    #returnbutton:active {
-      position:relative;
-      top:1px;
     }
     #appstore {
       margin: auto;
@@ -45,7 +42,7 @@
     <div id='qrcontainer'>
     </div>
     <div id='return'>
-      <a id='returnbutton'>Done, return to app</a>
+      <a id='returnbutton' class='irma-web-button'>Done, return to app</a>
     </div>
     <div id='appstore'>
       <p>No IRMA? Get it on:</p>
