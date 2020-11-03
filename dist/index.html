@@ -2,34 +2,32 @@
 <html>
   <head>
     <title>IRMA Session</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="main.js"></script>
     <style>
+    body {
+      font-family: "Roboto",Tahoma,Arial,sans-serif;
+    }
     #qrcontainer {
-      margin: auto;
-      text-align: center;
+      margin: 0 auto;
+      border-color: transparent;
+      background-color: white !important;
+      height: auto !important;
+      min-height: 250px !important;
+    }
+    #qrcontainer p {
+      color: black;
     }
     #return {
       margin: auto;
       text-align: center;
-      padding:24px;
+      padding: 10px 24px 24px;
     }
-    #returnbutton {
-      background-color:#0085be;
+    .irma-web-button {
       -moz-border-radius:28px;
       -webkit-border-radius:28px;
       border-radius:28px;
-      border:1px solid #0085be;
-      display:inline-block;
-      cursor:pointer;
-      color:#ffffff;
-      font-family:Arial;
-      font-size:17px;
       padding:16px 31px;
-      text-decoration:none;
-    }
-    #returnbutton:active {
-      position:relative;
-      top:1px;
     }
     #appstore {
       margin: auto;
@@ -44,12 +42,13 @@
     <div id='qrcontainer'>
     </div>
     <div id='return'>
-      <a id='returnbutton'>Done, return to app</a>
+      <a id='returnbutton' class='irma-web-button'>Done, return to app</a>
     </div>
     <div id='appstore'>
       <p>No IRMA? Get it on:</p>
     <a href="https://play.google.com/store/apps/details?id=org.irmacard.cardemu" target="_blank"class='appbutton'><img src="https://privacybydesign.foundation/images/google-play-badge.png" alt="Play Store" width="150" /></a>
     <a href="https://itunes.apple.com/nl/app/irma-authentication/id1294092994" target="_blank" class='appbutton'><img src="https://privacybydesign.foundation/images/app-store-badge.png" alt="Apple Store" width="150" /></a>
     </div>
+    <iframe id="fallback-irma-launcher" width="1" height="1" style="visibility:hidden"></iframe>
   </body>
 </html>
